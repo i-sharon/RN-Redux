@@ -20,10 +20,10 @@ render(){
   return (
     <View style={styles.container}>
 
-      <Text style={styles.title}>Food Form</Text>
+      <Text style={styles.title}>Shopping List</Text>
       <TextInput
         value={this.state.food}
-        placeholder='Name'
+        placeholder='Enter Item'
         style={styles.foodInput}
         onChangeText={(food) => this.setState({ food })}
       />
@@ -32,12 +32,12 @@ render(){
         onPress={() => {this.props.add(this.state.food)
         this.setState({food:null})
         }}>
-        <Text style={{ fontSize: 22, color: '#5fc9f8' }}>Submit</Text>
+        <Text style={{ fontSize: 22, color: 'black' }}>Submit</Text>
       </TouchableOpacity>
       <TouchableOpacity
         style={{ marginBottom: 16 }}
         onPress={() => this.props.navigation.navigate('FoodList')}>
-        <Text style={{ fontSize: 22, color: 'white' }}>Go to FoodList</Text>
+        <Text style={{ fontSize: 22, color: 'black' }}>Go to Shopping List</Text>
       </TouchableOpacity>
     </View>
   );
@@ -47,7 +47,7 @@ render(){
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#212121',
+    backgroundColor: 'beige',
     alignItems: 'center',
     justifyContent: 'center'
   },
@@ -55,7 +55,7 @@ const styles = StyleSheet.create({
     fontSize: 48,
     marginBottom: 30,
     marginTop: 16,
-    color: 'white'
+    color: 'black'
   },
   foodInput: {
     fontSize: 24,

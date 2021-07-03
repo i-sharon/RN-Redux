@@ -39,7 +39,7 @@ class FoodList extends Component{
 };
 const styles = StyleSheet.create({
   listContainer: {
-    backgroundColor: 'pink',
+    backgroundColor: 'blanchedalmond',
     padding: 16
   },
   listText: {
